@@ -1,5 +1,7 @@
 package main.helloworld;
 
+import java.util.Scanner;
+
 /**
  *
  * @author qa
@@ -13,7 +15,77 @@ public class Main {
         
         System.out.println("Hello World!");
         System.out.println("Boško Vajukić");
+        
+        int age = 5;
+        
+        
+//        if (age > 18) {
+//            System.out.println("Osoba je punoletna.");
+//            
+//        } else {
+//            System.out.println("Osoba je maloletna.");
+//        }
+//        
+//        System.out.print("Unesite broj godina: ");
+//        Scanner input = new Scanner(System.in);
+//        int userAge = input.nextInt();
+//        
+//        System.out.println("Korisnik je uneo: " + userAge);
+//        if (age > 18) {
+//            System.out.println("Osoba je punoletna.");
+//            
+//        } else {
+//            System.out.println("Osoba je maloletna.");
+//        }
+        
+        
+        
+        
+        
+        System.out.print("Unesite broj godina: ");
+        Scanner input = new Scanner(System.in);
+        int personAge = input.nextInt();
+        
+//        if (personAge > 0 && personAge <=5) {
+//            System.out.println("Baby");
+//        }
+//        if (personAge > 6 && personAge <=11) {
+//            System.out.println("Kid");
+//        }
+//        if (personAge > 12 && personAge <=17) {
+//            System.out.println("Teen");
+//        }
+//        if (personAge > 18) {
+//            System.out.println("Adilt");
+//            
+//        }
+//        if (personAge < 0) {
+//            System.out.println("invalid");
+//        }
+
+        if (personAge <=0 && personAge >150) {
+        System.out.println("Invalid");
+        }
+            else if (personAge <= 5) {
+            System.out.println("Baby");
+        }
+            else if (personAge <=11) {
+            System.out.println("Kid");
+        }
+            else if (personAge <=17) {
+            System.out.println("Teen");
+        }
+            else if (personAge >= 18) {
+            System.out.println("Adilt");
+        }
+        
+        // 0-5 -> Baby
+        // 6-11 -> Kid
+        // 12-17 -> Teen
+        // 18 + -> Adult
+        // other ->Invalid
     }
     
 }
         
+
